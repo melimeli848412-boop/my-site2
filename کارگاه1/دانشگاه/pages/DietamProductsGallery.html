@@ -1,0 +1,433 @@
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محصولات شمع دیتام | فروشگاه شمع طبیعی | Dietam Candles</title>
+  <meta name="description" content="مجموعه شمع‌های طبیعی دیتام با عطرهای مختلف شامل شمع نخیم مریخی، شمع حیاتی، شمع صدفی و شمع توپ توپی. خرید آنلاین با بهترین قیمت و کیفیت.">
+  <meta name="keywords" content="شمع طبیعی, شمع معطر, دیتام, محصولات شمع, فروشگاه شمع, شمع نخیم مریخی, شمع حیاتی">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="محصولات شمع دیتام | فروشگاه شمع طبیعی">
+  <meta property="og:description" content="مجموعه شمع‌های طبیعی دیتام با عطرهای مختلف و قیمت‌های مناسب">
+  <meta property="og:url" content="https://dietam.com/products">
+  <meta property="og:image" content="/images/og-image.jpg">
+
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Tahoma', 'Arial', sans-serif;
+      background: linear-gradient(135deg, #f9f7e8 0%, #e8f5e8 50%, #f5e8f0 100%);
+      min-height: 100vh;
+      direction: rtl;
+      text-align: right;
+    }
+
+    /* Layout components */
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+      width: 100%;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 0 24px;
+    }
+
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 94%;
+      max-width: 1274px;
+      background-color: #fadadd;
+      border: 10px solid #ffe5b4;
+      border-radius: 44px;
+      padding: 16px;
+      margin: 0 auto;
+    }
+
+    .logo-section {
+      width: 18%;
+      max-width: 228px;
+      height: 58px;
+      margin-bottom: 28px;
+    }
+
+    .logo-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .products-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      margin-top: 28px;
+    }
+
+    .product-card {
+      background-color: #cfe1c6;
+      border-radius: 32px;
+      width: 100%;
+      max-width: 282px;
+      margin: 0 auto;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 70px;
+      margin-top: 38px;
+      padding: 0 10px;
+    }
+
+    .product-image-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      background-image: url('../assets/images/img_vector_orange_100.svg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 20px;
+      padding: 14px 10px;
+      margin: 0 11px;
+    }
+
+    .product-image {
+      width: 100%;
+      max-width: 234px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      background-image: url('../assets/images/img_vector_white_a700.svg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 16px;
+      padding: 18px 8px;
+    }
+
+    .product-details {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: flex-start;
+      align-items: flex-end;
+      width: 100%;
+      margin-bottom: 6px;
+    }
+
+    .product-name {
+      width: 100%;
+      height: 44px;
+      object-fit: contain;
+    }
+
+    .product-price {
+      width: 80%;
+      height: 28px;
+      object-fit: contain;
+      margin-right: 26px;
+    }
+
+    /* Special styling for different product cards */
+    .product-card-2 .product-main {
+      gap: 80px;
+    }
+
+    .product-card-2 .product-image-container {
+      background-image: url('../assets/images/img_vector_red_100.svg');
+      margin-top: 76px;
+      margin: 76px 8px 0 8px;
+      padding: 8px 6px;
+    }
+
+    .product-card-2 .product-details {
+      justify-content: center;
+      align-items: center;
+      margin: 0 40px 6px 0;
+    }
+
+    .product-card-3 .product-main {
+      margin-top: 40px;
+    }
+
+    .product-card-3 .product-image-container {
+      margin: -358px 26px 0 26px;
+      padding: 26px;
+    }
+
+    .product-card-3 .product-details {
+      margin: 0 6px 6px 0;
+    }
+
+    .product-card-4 .product-main {
+      gap: 92px;
+    }
+
+    .product-card-4 .product-image-container {
+      background-image: url('../assets/images/img_vector_red_100.svg');
+      margin-top: 68px;
+      padding: 8px;
+      width: auto;
+      border-radius: 50%;
+    }
+
+    .product-card-4 .product-image {
+      width: 240px;
+      height: 240px;
+    }
+
+    .product-card-4 .product-details {
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .view-more-button {
+      background-color: #ffffff;
+      border-radius: 36px;
+      padding: 12px;
+      margin: 46px 0 8px 0;
+      width: auto;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .view-more-button:hover {
+      background-color: #f8f9fa;
+      transform: scale(1.05);
+    }
+
+    .view-more-button:active {
+      transform: scale(0.95);
+    }
+
+    .button-image {
+      width: 210px;
+      height: 74px;
+      object-fit: contain;
+    }
+
+    /* Typography */
+    .section-title {
+      font-size: 32px;
+      font-weight: 600;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Responsive media queries */
+    @media (min-width: 640px) {
+      .main-container {
+        padding: 24px;
+      }
+
+      .content-wrapper {
+        padding: 0 32px;
+      }
+
+      .products-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 26px;
+        justify-content: center;
+      }
+
+      .product-card {
+        width: calc(50% - 13px);
+        max-width: 282px;
+      }
+
+      .logo-section {
+        width: 16%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .main-container {
+        padding: 32px;
+      }
+
+      .main-content {
+        padding: 24px;
+      }
+
+      .section-title {
+        font-size: 36px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .content-wrapper {
+        padding: 0 56px;
+      }
+
+      .products-grid {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 26px;
+        justify-content: center;
+      }
+
+      .product-card {
+        width: 282px;
+        flex-shrink: 0;
+      }
+
+      .logo-section {
+        width: 18%;
+      }
+
+      .section-title {
+        font-size: 40px;
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .main-container {
+        padding: 40px;
+      }
+
+      .main-content {
+        padding: 32px;
+      }
+    }
+
+    /* Interactive states */
+    .product-card:focus-within {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+    }
+
+    .view-more-button:focus {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+    }
+
+    /* Accessibility improvements */
+    @media (prefers-reduced-motion: reduce) {
+      .product-card,
+      .view-more-button {
+        transition: none;
+      }
+    }
+  </style>
+  
+  <script type="module" async src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpersianca9967back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.10"></script>
+  <script type="module" defer src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body>
+  <main class="main-container">
+    <section class="content-wrapper">
+      <div class="main-content">
+        <header class="logo-section">
+          <img src="../assets/images/img_vector.svg" alt="شعار دیتام - فروشگاه شمع طبیعی" class="logo-image">
+        </header>
+
+        <h1 class="section-title">محصولات</h1>
+
+        <div class="products-grid" role="list">
+          <article class="product-card product-card-1" role="listitem">
+            <div class="product-main">
+              <div class="product-image-container">
+                <img src="../assets/images/img_vector_red_100.svg" alt="شمع نخیم مریخی - محصول طبیعی دیتام" class="product-image">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <img src="../assets/images/img_vector_red_100_44x262.svg" alt="شمع نخیم مریخی" class="product-name">
+                  <img src="../assets/images/img_vector_orange_100_28x192.svg" alt="قیمت: ۱۰۰,۰۰۰ هزار تومان" class="product-price">
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card product-card-2" role="listitem">
+            <div class="product-main">
+              <div class="product-image-container">
+                <img src="../assets/images/img_vector_orange_100.svg" alt="شمع حیاتی - محصول طبیعی دیتام" class="product-image">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <img src="../assets/images/img_vector_orange_100_44x196.svg" alt="شمع حیاتی" class="product-name">
+                  <img src="../assets/images/img_vector_red_100_28x198.svg" alt="قیمت: ۱۰۵,۰۰۰ هزار تومان" class="product-price">
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card product-card-3" role="listitem">
+            <div class="product-main">
+              <div class="product-image-container">
+                <img src="../assets/images/img_vector_red_100.svg" alt="شمع صدفی - محصول طبیعی دیتام" class="product-image">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <img src="../assets/images/img_vector_red_100_44x204.svg" alt="شمع صدفی" class="product-name">
+                  <img src="../assets/images/img_vector_orange_100_28x196.svg" alt="قیمت: ۱۱۰,۰۰۰ هزار تومان" class="product-price">
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card product-card-4" role="listitem">
+            <div class="product-main">
+              <div class="product-image-container">
+                <img src="../assets/images/img_vector_orange_100.svg" alt="شمع توپ توپی - محصول طبیعی دیتام" class="product-image">
+              </div>
+              <div class="product-info">
+                <div class="product-details">
+                  <img src="../assets/images/img_vector_orange_100_44x262.svg" alt="شمع توپ توپی" class="product-name">
+                  <img src="../assets/images/img_vector_28x198.svg" alt="قیمت: ۱۲۰,۰۰۰ هزار تومان" class="product-price">
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <button class="view-more-button" type="button" aria-label="مشاهده محصولات بیشتر">
+          <img src="../assets/images/img_group.svg" alt="محصولات بیشتر..." class="button-image">
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
